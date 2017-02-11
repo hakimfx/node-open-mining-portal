@@ -145,7 +145,9 @@ module.exports = function(logger, portalConfig, poolConfigs){
                                 validShares: replies[i + 2] ? (replies[i + 2].validShares || 0) : 0,
                                 validBlocks: replies[i + 2] ? (replies[i + 2].validBlocks || 0) : 0,
                                 invalidShares: replies[i + 2] ? (replies[i + 2].invalidShares || 0) : 0,
-                                totalPaid: replies[i + 2] ? (replies[i + 2].totalPaid || 0) : 0
+                                totalPaid: replies[i + 2] ? (replies[i + 2].totalPaid || 0) : 0,
+                                lastBlockHeight: replies[i + 2] ? (replies[i + 2].lastBlockHeight || 0) : 0,
+                                lastBlockTime: replies[i + 2] ? (replies[i + 2].lastBlockTime || 0) : 0
                             },
                             blocks: {
                                 pending: replies[i + 3],
